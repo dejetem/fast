@@ -40,7 +40,7 @@ $ http://localhost:8000/docs - swagger documentation
 $ http://localhost:8000/redoc - redoc documentation
 ```
 
-## sample for creating a product
+## sample for adding product with discount
 ``` json
 {
   "name": "string",
@@ -49,6 +49,19 @@ $ http://localhost:8000/redoc - redoc documentation
   "price": {
    "original": 50000,
    "discount_percentage": "30%",
+   "currency": "USD"
+  }
+}
+```
+
+## sample for adding product without discount
+``` json
+{
+  "name": "string",
+  "sku": "string",
+  "category": "string",
+  "price": {
+   "original": 50000,
    "currency": "USD"
   }
 }
